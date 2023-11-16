@@ -12,26 +12,26 @@ import App from "@/App.vue";
 
 // layouts
 
-import Admin from "@/layouts/Admin.vue";
-import Auth from "@/layouts/Auth.vue";
+import Admin from "@/layouts/AdminLayout.vue";
+import Auth from "@/layouts/AuthLayout.vue";
 
 // views for Admin layout
 
-import Dashboard from "@/views/admin/Dashboard.vue";
-import Settings from "@/views/admin/Settings.vue";
-import Tables from "@/views/admin/Tables.vue";
-import Maps from "@/views/admin/Maps.vue";
+import DashboardScreen from "@/views/admin/DashboardScreen.vue";
+import SettingsScreen from "@/views/admin/SettingsScreen.vue";
+import TablesScreen from "@/views/admin/TablesScreen.vue";
+import Maps from "@/views/admin/MapsScreen.vue";
 
 // views for Auth layout
 
-import Login from "@/views/auth/Login.vue";
-import Register from "@/views/auth/Register.vue";
+import LoginScreen from "@/views/auth/LoginScreen.vue";
+import RegisterScreen from "@/views/auth/RegisterScreen.vue";
 
 // views without layouts
 
-import Landing from "@/views/Landing.vue";
-import Profile from "@/views/Profile.vue";
-import Index from "@/views/Index.vue";
+import LandingScreen from "@/views/LandingScreen.vue";
+import ProfileScreen from "@/views/ProfileScreen.vue";
+import Index from "@/views/IndexScreen.vue";
 
 // routes
 
@@ -43,15 +43,15 @@ const routes = [
     children: [
       {
         path: "/admin/dashboard",
-        component: Dashboard,
+        component: DashboardScreen,
       },
       {
         path: "/admin/settings",
-        component: Settings,
+        component: SettingsScreen,
       },
       {
         path: "/admin/tables",
-        component: Tables,
+        component: TablesScreen,
       },
       {
         path: "/admin/maps",
@@ -66,21 +66,21 @@ const routes = [
     children: [
       {
         path: "/auth/login",
-        component: Login,
+        component: LoginScreen,
       },
       {
         path: "/auth/register",
-        component: Register,
+        component: RegisterScreen,
       },
     ],
   },
   {
     path: "/landing",
-    component: Landing,
+    component: LandingScreen,
   },
   {
     path: "/profile",
-    component: Profile,
+    component: ProfileScreen,
   },
   {
     path: "/",
